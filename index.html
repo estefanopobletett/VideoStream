@@ -13,10 +13,18 @@
     <header>
         <nav>
             <div class="izquierda">
-                <img src="static/images/Youtube_logo (1).png" alt="Logo" class="logo">
-                <a href="#" class="link">Inicio</a>
-                <a href="#" class="link">Explorar</a>
-                <a href="#" class="link">Mi lista</a>
+                <div class="logo">
+                    <img src="static/images/Youtube_logo (1).png" alt="Logo" >
+                    <h1>Video<span class="rojo">Stream</span></h1>
+                </div>
+
+
+                <div class="links">
+                    <a href="#" class="raya">Inicio</a>
+                    <a href="#" class="link">Explorar</a>
+                    <a href="#" class="link">Mi lista</a>
+                </div>
+
             </div>
             <div class="derecha">
                 <input type="text">
@@ -26,40 +34,137 @@
         </nav>
     </header>
     <main>
-        <section class="parteGrande">
-            <div class="video">
-                <video src="" controls></video>
-            </div>
-            <div class="infoVideo">
-                <h1>Lagos y montañas</h1>
-                <p>95 mil visualizaciones - 10 abr 2024</p>
-            </div>
-            <div class="likes">
-                <img src="" alt="" class="like">
-                <p id="numeroLike">10</p>
+        <section class="parteArriba">
+            <div class="parteGrande">
 
-                <img src="" alt="" class="dislike">
-                <p id="numeroDislike">2</p>
-
-                <img src="" alt="" class="compartir">
-                <p>Compartir</p>
-                <img src="" alt="" class="cola">
-                <p>Añadir a la cola</p>
-                <img src="" alt="" class="puntos">
-            </div>
-            <div class="canal">
-                <img src="" alt="" class="fotoCanal">
-                <div class="noombreCanal">
-                    <p class="nombre">VideoStream</p>
-                    <p><span id="sub">10</span> suscriptores</p>
+                <div class="video">
+                    <video src="" controls></video>
                 </div>
-                <div class="subscribe">
-                    <button>Suscribirse</button>
+                <div class="infoVideo">
+                    <h1>Lagos y montañas</h1>
+                    <p>95 mil visualizaciones - 10 abr 2024</p>
+                </div>
+                <div class="likes">
+                    <img src="static/images/pulgar-arriba.png" alt="" class="like">
+                    <p id="numeroLike">10</p>
+
+                    <img src="static/images/pulgar-abajo.png" alt="" class="dislike">
+                    <p id="numeroDislike">2</p>
+
+                    <img src="" alt="" class="compartir">
+                    <p>Compartir</p>
+                    <img src="" alt="" class="cola">
+                    <p>Añadir a la cola</p>
+                    <img src="" alt="" class="puntos">
+                </div>
+                <div class="canal">
+                    <img src="" alt="" class="fotoCanal">
+                    <div class="noombreCanal">
+                        <p class="nombre">VideoStream</p>
+                        <p><span id="sub">10</span> suscriptores</p>
+                    </div>
+                    <div class="subscribe">
+                        <button>Suscribirse</button>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Un recorrido por los lagos mas hermosos de la Patagonia</p>
+                    <a href="">Mostrar más </a>
+                </div>
+            </div>
+            <div class="partePequena">
+                <div class="videos-cola">
+                    <div class="siguentes">
+                        <h2>Siguientes en la cola</h2>
+                        <button>Limpiar cola</button>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Explorando la patagonia</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="equis">X</button>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Comida callejera</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="equis">X</button>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Ciudades del mundo</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                    </div>
+                    <button class="equis">X</button>
+                </div>
+                <div class="recomendados">
+                    <div class="rec">
+                        <h2>Recomendados</h2>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Explorando la patagonia</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="anadir">+</button>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Comida callejera</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="anadir">+</button>
+                    </div>
+                    <div class="tarjeta">
+                        <video src="" controls></video>
+                        <div class="videin">
+                            <p class="negrita">Ciudades del mundo</p>
+                            <p>VideoStream</p>
+                            <p>120 mil visualizaciones</p>
+                        </div>
+                        <button class="anadir">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parteAbajo">
+            <div>
+                <video src="" controls></video>
+                <div class="videin">
+                    <p class="negrita">Ciudades del mundo</p>
+                    <p>120 mil visualizaciones</p>
+                </div>
+            </div>
+            <div>
+                <video src="" controls></video>
+                <div class="videin">
+                    <p class="negrita">Ciudades del mundo</p>
+                    <p>120 mil visualizaciones</p>
+                </div>
+            </div>
+            <div>
+                <video src="" controls></video>
+                <div class="videin">
+                    <p class="negrita">Ciudades del mundo</p>
+                    <p>120 mil visualizaciones</p>
                 </div>
             </div>
         </section>
     </main>
-
     <script src="static/js/script.js"></script>
 </body>
 

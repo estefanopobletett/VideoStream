@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.izquierda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.links{
+    display: flex;
+    gap: 40px;
+}
+.link{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.raya{
+        border-bottom: 3px solid black;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.derecha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+}
+.rojo{
+    color: red;
+}
+
+.derecha img{
+    height: 40px;
+}
+.derecha input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+.parteArriba{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.parteGrande{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+}
+.video video{
+    height: 400px;
+    width: 700px;
+}
+.video{
+    align-items: center;
+}
+.likes img{
+    height: 34px;
+}
+
+
+.partePequena{
+    flex: 1;
+}
+
