@@ -14,16 +14,15 @@ botnDISlike1.addEventListener("click", function () {
     Dislikes1.innerText = contador + 1;
 });
 
-const foto = document.getElementById("foto")
-const parrafo = document.getElementById("parrafo")
+const foto = document.querySelector(".fotot")
+
 
 
 foto.addEventListener("mouseover", function(){
-foto.src = "static/images/noche-estrellada-sobre-el-ródano.png"
-parrafo.innerText = "Noche estrellada sobre el ródano, Vicent van Gogh (1889) "
+foto.src = "static/videos/sergeigussev-geiranger-28062.gif"
 })
 
 foto.addEventListener("mouseout", function(){
-foto.src = "static/images/campo-de-trigo-con-cipreses.png"
-parrafo.innerText = "Campo de trigo con cipreses, Vicent van Gogh (1889)"
+foto.src = "static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg"
+
 })
