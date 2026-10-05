@@ -79,8 +79,8 @@ nav{
                 border-right: 2px solid rgb(173, 172, 172);
                 padding-right: 10px;
 }
-.video video{
-    height: 450px;
+.video img{
+    height: 500px;
     width: 100%;
 }
 .video{
@@ -103,6 +103,7 @@ nav{
 }
 .zonaLike img{
     height: 40px;
+    cursor: pointer;
 }
 .botn{
     display: flex;
@@ -173,12 +174,14 @@ nav{
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
 .videos-cola{
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .siguientes{
@@ -199,5 +202,67 @@ nav{
 .tarjeta{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.tarjeta button{
+    font-size: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+.videin{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.negrita{
+    font-weight: bold;
+}
+.tarjeta img{
+    height: 130px;
+    width: 210px;
 }
 
+.recomendados{
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.anadir{
+    border: solid 2px black;
+    padding: 5px 5px 1px 5px;
+}
+.equis{
+    border: none;
+}
+
+
+.parteAbajo{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 30px   ;
+}
+.videoMas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px   ;
+}
+.tarjetaRec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetaRec img{
+    height: 130px;
+    width: 210px;
+}
+
+.linea{
+    font-size: 50px;
+}
