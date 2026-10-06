@@ -14,206 +14,197 @@
         <nav>
             <div class="izquierda">
                 <div class="logo">
-                    <img src="static/images/Youtube_logo (1).png" alt="Logo">
+                    <img src="static/images/Youtube_logo (1).png" alt="Logo de VideoStream">
                     <h1>Video<span class="rojo">Stream</span></h1>
                 </div>
-
 
                 <div class="links">
                     <a href="#" class="raya">Inicio</a>
                     <a href="#" class="link">Explorar</a>
                     <a href="#" class="link">Mi lista</a>
                 </div>
-
             </div>
+
             <div class="derecha">
-                <input type="text">
-                <img src="static/images/campana.png" alt="" class="campana">
-                <img src="static/images/Default_pfp.png" alt="" class="perfil">
+                <input type="search" aria-label="Buscar">
+                <img src="static/images/campana.png" alt="Notificaciones" class="campana">
+                <img src="static/images/Default_pfp.png" alt="Perfil" class="perfil">
             </div>
         </nav>
     </header>
+
     <main class="container">
         <section class="parteArriba">
             <div class="parteGrande">
-
                 <div class="video">
-                    <img src="static/videos/sergeigussev-geiranger-28062.gif" controls></img>
+                    <video controls poster="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg">
+                        <source src="static/videos/patagonia.mp4" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
                 </div>
+
                 <div class="infoVideo">
                     <h1>Lagos y montañas</h1>
-                    <p>95 mil visualizaciones - 10 abr 2024</p>
+                    <p>95 mil visualizaciones · 10 abr 2024</p>
                 </div>
+
                 <div class="likes">
                     <div class="zonaLike">
-                        <div class="botn"> <img src="static/images/pulgar-arriba.png" alt="" class="like" id="botnlike">
-                            <p id="numeroLike">10</p>
-                        </div>
+                        <button class="botn botonIcono" id="botnlike" aria-label="Me gusta">
+                            <img src="static/images/pulgar-arriba.png" alt="">
+                            <span id="numeroLike">4.800</span>
+                        </button>
 
-                        <div class="botn"> <img src="static/images/pulgar-abajo.png" alt="" class="dislike" id="botnDislike">
-                            <p id="numeroDislike">2</p>
-                        </div>
-
+                        <button class="botn botonIcono" id="botnDislike" aria-label="No me gusta">
+                            <img src="static/images/pulgar-abajo.png" alt="">
+                            <span id="numeroDislike">120</span>
+                        </button>
                     </div>
+
                     <div class="zonaMas">
-                        <div class="botn">
+                        <button class="botn botonIcono">
                             <img src="static/images/share.png" alt="">
-                            <p>Compartir</p>
-                        </div>
+                            <span>Compartir</span>
+                        </button>
 
-                        <div class="botn">
-                            <img src="static/images/more.png" alt="">
-                            <p>Añadir a la cola</p>
-                        </div>
+                        <button class="botn botonIcono" id="botonColaPrincipal">
+                            <span class="iconoMas">＋</span>
+                            <span>Añadir a la cola</span>
+                        </button>
 
-                        <div class="botn">
+                        <button class="botn botonIcono" aria-label="Más opciones">
                             <img src="static/images/dots.png" alt="">
-                        </div>
-
+                        </button>
                     </div>
-
                 </div>
+
                 <div class="canal">
                     <div class="infocanal">
-                        <img src="static/images/Default_pfp.png " alt="" class="fotoCanal">
-                        <div class="noombreCanal">
+                        <img src="static/images/Default_pfp.png" alt="Foto de VideoStream" class="fotoCanal">
+                        <div>
                             <p class="nombre">VideoStream</p>
-                            <p><span id="sub">10</span> suscriptores</p>
+                            <p><span id="sub">1,2 M</span> de suscriptores</p>
                         </div>
                     </div>
 
-
                     <div class="subscribe">
-                        <button>Suscribirse</button>
+                        <button id="botonSub">Suscribirse</button>
                     </div>
                 </div>
+
                 <div class="desc">
-                    <p>Un recorrido por los lagos mas hermosos de la Patagonia,
-                        uno de los lugares más imponentes y hermosos del planeta.
-                        Desde glaciares gigantescos hasta montañas que desafían al cielo,
-                        te llevo a recorrer paisajes que parecen sacados de otro planeta.
-                    </p>
-                    <a href="#">Mostrar más ▼ </a>
+                    <p>Un recorrido por los lagos más hermosos de la Patagonia, uno de los lugares más imponentes del planeta. Desde glaciares gigantescos hasta montañas que desafían al cielo, te llevo a recorrer paisajes que parecen sacados de otro planeta.</p>
+                    <a href="#">Mostrar más ▼</a>
                 </div>
             </div>
-            <div class="partePequena">
+
+            <aside class="partePequena">
                 <div class="videos-cola">
                     <div class="siguientes">
-                        <h2>Siguientes en la cola</h2>
-                        <button>Limpiar cola</button>
+                        <h2>Siguiente en la cola</h2>
+                        <button id="limpiarCola">Limpiar cola</button>
                     </div>
-                    <div class="tarjeta">
-                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="fotot"></img>
+
+                    <div class="tarjeta itemCola">
+                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Explorando la Patagonia">
                         <div class="videin">
-                            <p class="negrita">Explorando la patagonia</p>
+                            <p class="negrita">Explorando la Patagonia</p>
                             <p>VideoStream</p>
                             <p>120 mil visualizaciones</p>
                         </div>
-                        <button class="equis">X</button>
+                        <button class="equis" aria-label="Eliminar">×</button>
                     </div>
-                    <div class="tarjeta">
-                        <img src="static/images/callejera.png" ></img>
+
+                    <div class="tarjeta itemCola">
+                        <img src="static/images/callejera.png" class="miniatura" alt="Comida callejera">
                         <div class="videin">
                             <p class="negrita">Comida callejera</p>
                             <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                            <p>98 mil visualizaciones</p>
                         </div>
-                        <button class="equis">X</button>
+                        <button class="equis" aria-label="Eliminar">×</button>
                     </div>
-                    <div class="tarjeta">
-                        <img src="static/images/ciudade.png" ></img>
+
+                    <div class="tarjeta itemCola">
+                        <img src="static/images/ciudade.png" class="miniatura" alt="Ciudades del mundo">
                         <div class="videin">
                             <p class="negrita">Ciudades del mundo</p>
                             <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                            <p>210 mil visualizaciones</p>
                         </div>
-                        <button class="equis">X</button>
+                        <button class="equis" aria-label="Eliminar">×</button>
                     </div>
-
                 </div>
+
                 <div class="recomendados">
-                    <div class="rec">
-                        <h2>Recomendados</h2>
-                    </div>
+                    <h2>Recomendados</h2>
+
                     <div class="tarjeta">
-                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
+                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Rutas de trekking">
                         <div class="videin">
                             <p class="negrita">Rutas de trekking</p>
                             <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                            <p>80 mil visualizaciones</p>
                         </div>
-                        <button class="anadir">+</button>
+                        <button class="anadir" aria-label="Añadir a la cola">＋</button>
                     </div>
+
                     <div class="tarjeta">
-                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg"></img>
+                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Fauna patagónica">
                         <div class="videin">
-                            <p class="negrita">Fauna patagonica</p>
+                            <p class="negrita">Fauna patagónica</p>
                             <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                            <p>60 mil visualizaciones</p>
                         </div>
-                        <button class="anadir">+</button>
+                        <button class="anadir" aria-label="Añadir a la cola">＋</button>
                     </div>
+
                     <div class="tarjeta">
-                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
+                        <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Atardeceres increíbles">
                         <div class="videin">
-                            <p class="negrita">Atardeceres increibles</p>
+                            <p class="negrita">Atardeceres increíbles</p>
                             <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                            <p>72 mil visualizaciones</p>
                         </div>
-                        <button class="anadir">+</button>
+                        <button class="anadir" aria-label="Añadir a la cola">＋</button>
                     </div>
                 </div>
-            </div>
+            </aside>
         </section>
 
         <section class="parteAbajo">
+            <h2>Más videos</h2>
 
-            <div class="title">
-                <h1>Más videos</h1>
-            </div>
             <div class="videoMas">
+                <button class="flecha" aria-label="Anterior">‹</button>
 
-<div class="linea">
-    <h2><</h2>
-</div>
                 <div class="tarjetaRec">
-                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
-                    <div class="videin">
-                        <p class="negrita">Atardeceres increibles</p>
-                        <p>120 mil visualizaciones</p>
-                    </div>
-
+                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Rutas de trekking">
+                    <p class="negrita">Rutas de trekking</p>
+                    <p>80 mil visualizaciones</p>
                 </div>
 
                 <div class="tarjetaRec">
-                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
-                    <div class="videin">
-                        <p class="negrita">Atardeceres increibles</p>
-                        <p>120 mil visualizaciones</p>
-                    </div>
-
+                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Lagos y montañas">
+                    <p class="negrita">Lagos y montañas</p>
+                    <p>95 mil visualizaciones</p>
                 </div>
 
                 <div class="tarjetaRec">
-                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
-                    <div class="videin">
-                        <p class="negrita">Atardeceres increibles</p>
-                        <p>120 mil visualizaciones</p>
-                    </div>
-
+                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Fauna patagónica">
+                    <p class="negrita">Fauna patagónica</p>
+                    <p>60 mil visualizaciones</p>
                 </div>
 
                 <div class="tarjetaRec">
-                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" ></img>
-                    <div class="videin">
-                        <p class="negrita">Atardeceres increibles</p>
-                        <p>120 mil visualizaciones</p>
-                    </div>
-
+                    <img src="static/images/Cuernos_del_Paine_from_Lake_Pehoé.jpg" class="miniatura" alt="Consejos para viajar">
+                    <p class="negrita">Consejos para viajar</p>
+                    <p>110 mil visualizaciones</p>
                 </div>
             </div>
         </section>
     </main>
+
     <script src="static/js/script.js"></script>
 </body>
 

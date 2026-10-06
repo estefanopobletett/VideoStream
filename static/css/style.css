@@ -1,268 +1,426 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    border-bottom: 2px solid rgb(173, 172, 172);
-    margin-bottom: 10px;
+body {
+    color: #111;
+    background: #fff;
 }
 
-.izquierda{
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
+    padding: 14px 20px;
+    border-bottom: 1px solid #ddd;
 }
-.links{
+
+.izquierda,
+.derecha,
+.logo,
+.links,
+.zonaLike,
+.zonaMas,
+.botn,
+.canal,
+.infocanal,
+.tarjeta,
+.videoMas {
     display: flex;
-    gap: 40px;
-}
-.link{
-    font-size: 17px;
-    color: black;
-    text-decoration: none;
-}
-.raya{
-        border-bottom: 3px solid black;
-    font-size: 17px;
-    color: black;
-    text-decoration: none;
-}
-.derecha{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.logo{
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
-.logo img{
-    height: 50px;
+
+.izquierda {
+    gap: 70px;
 }
-.rojo{
+
+.logo {
+    gap: 8px;
+}
+
+.logo img {
+    width: 34px;
+}
+
+.logo h1 {
+    font-size: 23px;
+}
+
+.rojo {
     color: red;
 }
 
-.derecha img{
-    height: 40px;
-}
-.derecha input{
-    height: 30px;
-    border-radius: 10px;
+.links {
+    gap: 30px;
 }
 
-
-.parteArriba{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    gap: 40px;
-            border-bottom: 2px solid rgb(173, 172, 172);
-}
-.parteGrande{
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-
-                border-right: 2px solid rgb(173, 172, 172);
-                padding-right: 10px;
-}
-.video img{
-    height: 500px;
-    width: 100%;
-}
-.video{
-    align-items: center;
-    
-}
-.likes{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    gap: 20px;
-        border-bottom: 2px solid rgb(173, 172, 172);
-}
-
-.zonaLike{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.zonaLike img{
-    height: 40px;
-    cursor: pointer;
-}
-.botn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.zonaMas{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.zonaMas img{
-    height: 30px;
-}
-
-.canal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center ;
-        border-bottom: 2px solid rgb(173, 172, 172);
-        padding-top: 10px;
-                padding-bottom: 10px;
-}
-.infocanal{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.nombre{
-    font-weight: bold;
-    font-size: 20px;
-}
-
-
-.fotoCanal{
-        height: 70px;
-}
-.subscribe button{
-    height: 40px ;
-    width: 120px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    background-color: red;
-    font-size: 15px;
-}
-
-.desc{
-    margin-top: 10px;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-.desc a{
+.links a {
+    color: #111;
     text-decoration: none;
-    color: rgb(121, 30, 206);
-        border-bottom: 2px solid rgb(173, 172, 172);
-}
-.partePequena{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    padding: 10px 0;
 }
 
-.videos-cola{
+.raya {
+    border-bottom: 2px solid #111;
+}
+
+.derecha {
+    gap: 15px;
+}
+
+.derecha input {
+    width: 180px;
+    height: 32px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+.derecha img {
+    width: 32px;
+    height: 32px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.parteArriba {
     display: flex;
-    flex-direction: column;
     gap: 20px;
-
+    padding: 20px;
 }
 
-.siguientes{
+.parteGrande {
+    flex: 2;
+    min-width: 0;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.video video {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background: #ddd;
+}
+
+.infoVideo {
+    padding: 12px 0;
+}
+
+.infoVideo h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.infoVideo p,
+.videin p,
+.tarjetaRec p {
+    color: #555;
+    font-size: 14px;
+}
+
+.likes {
     display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.zonaLike,
+.zonaMas {
+    gap: 18px;
+}
+
+.botn {
+    gap: 6px;
+    border: 0;
+    background: white;
+}
+
+.botn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.botn:hover {
+    opacity: .7;
+}
+
+.iconoMas {
+    font-size: 28px;
+}
+
+.canal {
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.siguientes button{
-    height:35px ;
-    width: 100px;
-    border-radius: 5px;
-    border: solid 1px rgb(173, 172, 172);;
-    cursor: pointer;
+.infocanal {
+    gap: 12px;
 }
 
-.tarjeta{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.fotoCanal {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
 
-}
-.tarjeta button{
-    font-size: 25px;
-    background-color: white;
-    cursor: pointer;
-}
-.videin{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.negrita{
+.nombre,
+.negrita {
     font-weight: bold;
 }
-.tarjeta img{
-    height: 130px;
-    width: 210px;
+
+.nombre {
+    margin-bottom: 4px;
 }
 
-.recomendados{
-        display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+.subscribe button {
+    padding: 11px 18px;
+    color: white;
+    background: red;
+    border: 0;
+    border-radius: 5px;
 }
 
-.anadir{
-    border: solid 2px black;
-    padding: 5px 5px 1px 5px;
-}
-.equis{
-    border: none;
+.subscribe button.suscrito {
+    color: #111;
+    background: #eee;
 }
 
+.desc {
+    padding-top: 12px;
+    line-height: 1.5;
+}
 
-.parteAbajo{
+.desc a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.partePequena {
+    flex: 1;
+    min-width: 300px;
+}
+
+.videos-cola,
+.recomendados {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    gap: 30px   ;
+    gap: 14px;
 }
-.videoMas{
+
+.recomendados {
+    margin-top: 35px;
+}
+
+.siguientes {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px   ;
-}
-.tarjetaRec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.tarjetaRec img{
-    height: 130px;
+.siguientes h2,
+.recomendados h2 {
+    font-size: 17px;
+}
+
+.siguientes button {
+    padding: 7px 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tarjeta {
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.tarjeta img {
+    width: 115px;
+    height: 75px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.videin {
+    flex: 1;
+}
+
+.videin p {
+    margin: 2px 0;
+}
+
+.equis,
+.anadir {
+    background: white;
+}
+
+.equis {
+    border: 0;
+    font-size: 22px;
+}
+
+.anadir {
+    border: 2px solid #111;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 0 5px;
+}
+
+.parteAbajo {
+    padding: 15px 20px 30px;
+    border-top: 1px solid #ddd;
+}
+
+.parteAbajo h2 {
+    margin-bottom: 18px;
+}
+
+.videoMas {
+    gap: 25px;
+    overflow-x: auto;
+}
+
+.tarjetaRec {
+    min-width: 210px;
+}
+
+.tarjetaRec img {
     width: 210px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 7px;
 }
 
-.linea{
-    font-size: 50px;
+.flecha {
+    border: 0;
+    background: white;
+    font-size: 45px;
+}
+
+.miniatura.reproduciendo {
+    opacity: .75;
+}
+
+@media (max-width: 1023px) {
+    .izquierda {
+        gap: 20px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .derecha input {
+        width: 120px;
+    }
+
+    .parteArriba {
+        flex-direction: column;
+    }
+
+    .parteGrande {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .partePequena {
+        min-width: 0;
+    }
+
+    .video video {
+        height: 400px;
+    }
+
+    .likes {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        padding: 10px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .derecha input {
+        width: 90px;
+    }
+
+    .campana {
+        display: none;
+    }
+
+    .parteArriba,
+    .parteAbajo {
+        padding: 10px;
+    }
+
+    .video video {
+        height: 230px;
+    }
+
+    .infoVideo h1 {
+        font-size: 20px;
+    }
+
+    .likes {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .zonaMas {
+        gap: 10px;
+    }
+
+    .zonaMas .botn span:not(.iconoMas) {
+        font-size: 12px;
+    }
+
+    .canal {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .subscribe button {
+        padding: 9px 12px;
+    }
+
+    .tarjeta img {
+        width: 100px;
+        height: 65px;
+    }
+
+    .videoMas {
+        gap: 15px;
+    }
 }
